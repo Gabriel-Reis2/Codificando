@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja de Roupas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> Bem-vindo à nossa loja!</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Destaques</h2>
+    <section class="produtos">
+      <div class="produto">
+        <img src="produtos/camisa2.jpg" alt="Produto 1" style="width: 200px; height: 200px;">
+        <h3>Camiseta Básica</h3>
+        <p>R$ 49,90</p>
+        <button onclick="adicionarAoCarrinho('Camiseta Básica', 49.90)">Comprar</button>
+      </div>
+      <br>
+      <div class="produto">
+        <img src="produtos/calca1.jpg" alt="Produto 2" style="width: 200px; height: 200px;">
+        <h3>Calça Jeans</h3>
+        <p>R$ 129,90</p>
+        <button onclick="adicionarAoCarrinho('Calça Jeans', 129.90)">Comprar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Estilos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
